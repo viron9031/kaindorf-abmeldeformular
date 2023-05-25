@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chess Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div id="setup-modal">
+    <div id="setup-form">
+      <h2>Game Setup</h2>
+      <input type="number" id="time-input" min="1" max="60" step="1" value="1" />
+      <label for="time-input">Time for each player's clock (minutes)</label>
+      <br/>
+      <input type="number" id="wait-input" min="1" max="60" step="1" value="5" />
+      <label for="wait-input">Wait time before next turn (seconds)</label>
+      <br/>
+      <button id="start-button">Start Game</button>
+    </div>
+  </div>
+
+  <div id="clock-container">
+    <div class="clock" id="clock1">01:00</div>
+    <div class="clock" id="clock2">01:00</div>
+  </div>
+
+  <div id="random-number">
+    Random Number: <span id="number">-</span>
+  </div>
+
+  <div id="pdf-container">
+    <object data="regeln.pdf" type="application/pdf" width="100%" height="100%">
+      <p>It appears you don't have a PDF plugin for this browser. No problem... you can <a href="regeln.pdf">click here to download the PDF file.</a></p>
+    </object>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

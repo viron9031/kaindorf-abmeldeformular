@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #373b44, #4286f4);
+    color: #fff;
+  }
+  
+  #clock-container, #random-number, #pdf-container {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .clock {
+    border: 1px solid #fff;
+    padding: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 2em;
+    background: #f4f4f4;
+    color: #333;
+    border-radius: 10px;
+  }
+  
+  #random-number {
+    font-size: 1.5em;
+  }
+  
+  #pdf-container {
+    height: 50vh;
+  }
+  
+  object {
+    border-radius: 10px;
+  }
+  
+  #setup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #setup-form {
+    background: #f4f4f4;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 10px;
+  }
+  
+  #setup-form input {
+    width: 90%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 1.2em;
+  }
+  
+  #start-button {
+    background: #4286f4;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
